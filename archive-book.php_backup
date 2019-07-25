@@ -1,0 +1,90 @@
+<?php
+
+/* Template Name: Archive Template */
+
+get_header(); ?>
+
+<div class="content">						
+
+	<?php if ( have_posts( )) : while( have_posts() ) : the_post(); ?>
+
+		<div <?php post_class( 'post single' ); ?>>
+		
+			<div class="post-inner section-inner thin">
+	
+				<div class="post-header">
+																										
+					<?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
+														
+				</div><!-- .post-header -->
+			   				        			        		                
+				<div class="post-content">
+				<img src = "<?php the_field('cover');?>"/>
+						<table width="100%" border="1" cellspacing="0" cellpadding="0">
+							<tr>
+							<td width="25%"><strong>제목</strong></td>
+							<td width="75%"><?php the_field('title'); ?></td>
+							</tr>
+							<tr>
+							<td><strong>저자</strong></td>
+							<td><?php the_field('auther'); ?></td>
+							</tr>
+							<tr>
+							<td><strong>출판사</strong></td>
+							<td><?php the_field('publisher'); ?></td>
+							</tr>
+							<tr>
+							<td><strong>분량</strong></td>
+							<td><?php the_field('pages'); ?>쪽</td>
+							</tr>
+							<tr>
+							<td><strong>출간일</strong></td>
+							<td><?php the_field('publication_date'); ?></td>
+							</tr>
+							<tr>
+							<td><strong>독서기간</strong></td>
+							<td><?php the_field('start_date'); ?>~<?php the_field('end_date'); ?></td>
+							</tr>
+							<tr>
+							<td><strong>참고점수</strong></td>
+							<td><?php the_field('rating'); ?></td>
+							</tr>
+						</table>
+											                                        
+					<?php the_content(); ?>
+					
+					<div class="clear"></div>
+					
+					
+										
+				</div>
+            
+			</div><!-- .post-inner -->
+
+		</div><!-- .post -->
+		
+		<?php if ( comments_open() ) : ?>
+			
+			<div class="comments-container">
+				
+				<div class="comments-inner section-inner thin">
+				
+					<?php comments_template( '', true ); ?>
+				
+				</div>
+			
+			</div><!-- .comments-container -->
+		
+		<?php endif; ?>
+			
+	<?php endwhile; 
+
+	else: ?>
+
+		<p><?php _e( "We couldn't find any posts that matched your query. Please try again.", "rams" ); ?></p>
+
+	<?php endif; ?>
+	
+</div><!-- .content -->
+								
+<?php get_footer(); ?>
