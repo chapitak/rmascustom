@@ -57,7 +57,7 @@
                                                         </tr>
                                                         <tr>
                                                         <td><strong>관람일</strong></td>
-                                                        <td><?php the_field('watch_date'); ?>쪽</td>
+                                                        <td><?php the_field('watch_date'); ?></td>
                                                         </tr>
                                                         <tr>
                                                         <td><strong>상영시간</strong></td>
