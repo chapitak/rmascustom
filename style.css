@@ -3,7 +3,7 @@
  *     Template: rams
  *     */
 
-.book, .video{
+.book, .video, .album{
 	background: #fff;
 	margin-bottom: 10%;
 }
