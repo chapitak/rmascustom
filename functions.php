@@ -8,13 +8,13 @@
   add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
 	function add_my_post_types_to_query( $query ) {
 	if ( is_home() && $query->is_main_query() )
-	$query->set( 'post_type', array( 'post', 'book', 'video', 'album' ) );
+	$query->set( 'post_type', array( 'post', 'book', 'video', 'music' ) );
 	return $query;
 	}
 	function themeprefix_show_cpt_archives( $query ) {
 	if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
 	$query->set( 'post_type', array(
-	'post', 'nav_menu_item', 'book', 'video', 'album'));
+	'post', 'nav_menu_item', 'book', 'video', 'music'));
 	return $query;
 	}
 	}
