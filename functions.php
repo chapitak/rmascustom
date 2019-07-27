@@ -24,9 +24,15 @@
 	    global $post;
 	    $post = get_post( $post_id );
 	} );	
-	function acme_login_redirect( $redirect_to, $request, $user  ) {
-	return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : get_permalink();
-	}
-	add_filter( 'login_redirect', 'acme_login_redirect', 10, 3 );
+	function wti_loginout_menu_link( $items, $args ) {
+		if ($args->theme_location == 'primary') {
+		if (is_user_logged_in()) {
+		$items .= '<li class="right"><a href="'. wp_logout_url( get_permalink() ) .'">Logout</a></li>'; // 로그아웃
+		} else {
+		$items .= '<li class="right"><a href="'. wp_login_url(get_permalink()) .'">Login</a></li>'; // 로그인
+		}
+		}
+		return $items;
+		}
 ?>
 
