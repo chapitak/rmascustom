@@ -49,7 +49,8 @@
 					</div><!-- .post-header -->
 						
 					<div class="post-content"><!--여기부터 이미지와 테이블까지. -->
-						<img src = "<?php the_field('cover');?>"/><br>
+						<img src = "<?php the_field('cover');?>"/>
+							<br><hr>
 							<strong>제목: </strong>
 							<?php the_field('title'); ?><br>
 							
@@ -74,7 +75,8 @@
 							
 							
 							<strong>점수: </strong>
-							<?php the_field('rating'); ?><br>
+							<?php the_field('rating'); ?>
+							<br><hr>
 
 						<?php the_content(); ?>
 					</div><!-- .post-content -->

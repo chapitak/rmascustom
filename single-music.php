@@ -49,29 +49,28 @@
 					</div><!-- .post-header -->
 						
 					<div class="post-content"><!--여기부터 이미지와 테이블까지. -->
-					<img src = "<?php the_field('cover');?>"/>
-						<table width="100%" border="1" cellspacing="0" cellpadding="0">
-								<tr>
-								<td width="25%"><strong>앨범명</strong></td>
-								<td width="75%"><?php the_field('title'); ?></td>
-								</tr>
-								<tr>
-								<td><strong>아티스트</strong></td>
-								<td><?php the_field('artist'); ?></td>
-								</tr>
-								<tr>
-								<td><strong>발매일</strong></td>
-								<td><?php the_field('release_date'); ?></td>
-								</tr>
-								<tr>
-								<td><strong>장르</strong></td>
-								<td><?php the_field('genre'); ?></td>
-								</tr>
-								<tr>
-								<td><strong>참고점수</strong></td>
-								<td><?php the_field('rating'); ?></td>
-								</tr>
-						</table>
+					<img src = "<?php the_field('cover');?>"/><br><hr>
+								
+								<strong>앨범명: </strong>
+								<?php the_field('title'); ?><br>
+								
+								
+								<strong>아티스트: </strong>
+								<?php the_field('artist'); ?><br>
+								
+								
+								<strong>발매일: </strong>
+								<?php the_field('release_date'); ?><br>
+								
+								
+								<strong>장르: </strong>
+								<?php the_field('genre'); ?><br>
+								
+								
+								<strong>참고점수: </strong>
+								<?php the_field('rating'); ?><br>
+								<hr>
+								
 						<?php the_content(); ?>
 					</div><!-- .post-content -->
 					

@@ -41,37 +41,35 @@
 		<?php if ( get_the_content() ) : ?>
 		
 			<div class="post-content">
-			<img src = "<?php the_field('cover');?>"/>
-                                                <table width="100%" border="1" cellspacing="0" cellpadding="0">
-                                                        <tr>
-                                                        <td width="25%"><strong>제목</strong></td>
-                                                        <td width="75%"><?php the_field('title'); ?></td>
-                                                        </tr>
-                                                        <tr>
-                                                        <td><strong>저자</strong></td>
-                                                        <td><?php the_field('auther'); ?></td>
-                                                        </tr>
-                                                        <tr>
-                                                        <td><strong>출판사</strong></td>
-                                                        <td><?php the_field('publisher'); ?></td>
-                                                        </tr>
-                                                        <tr>
-                                                        <td><strong>분량</strong></td>
-                                                        <td><?php the_field('pages'); ?>쪽</td>
-                                                        </tr>
-                                                        <tr>
-                                                        <td><strong>출간일</strong></td>
-                                                        <td><?php the_field('publication_date'); ?></td>
-                                                        </tr>
-                                                        <tr>
-                                                        <td><strong>읽은날</strong></td>
-                                                        <td><?php the_field('start_date'); ?>-<?php the_field('end_date'); ?></td>
-                                                        </tr>
-                                                        <tr>
-                                                        <td><strong>참고점수</strong></td>
-                                                        <td><?php the_field('rating'); ?></td>
-                                                        </tr>
-                                                </table>
+			<img src = "<?php the_field('cover');?>"/><br><hr>
+                                                        
+                                                        <strong>제목</strong>
+                                                        <?php the_field('title'); ?><br>
+                                                        
+                                                        
+                                                        <strong>저자</strong>
+                                                        <?php the_field('auther'); ?><br>
+                                                        
+                                                        
+                                                        <strong>출판사</strong>
+                                                        <?php the_field('publisher'); ?><br>
+                                                        
+                                                        
+                                                        <strong>분량</strong>
+                                                        <?php the_field('pages'); ?>쪽<br>
+                                                        
+                                                        
+                                                        <strong>출간일</strong>
+                                                        <?php the_field('publication_date'); ?><br>
+                                                        
+                                                        
+                                                        <strong>읽은날</strong>
+                                                        <?php the_field('start_date'); ?>-<?php the_field('end_date'); ?><br>
+                                                        
+                                                        
+                                                        <strong>참고점수</strong>
+                                                        <?php the_field('rating'); ?><br><hr>
+                                                        
 				<?php the_content(); ?>
 			
 			</div><!-- .post-content -->

@@ -14,7 +14,7 @@
 	function themeprefix_show_cpt_archives( $query ) {
 	if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
 	$query->set( 'post_type', array(
-	'post', 'nav_menu_item', 'book', 'video', 'album'));
+	'post', 'nav_menu_item', 'book', 'video', 'album' ));
 	return $query;
 	}
 	}
