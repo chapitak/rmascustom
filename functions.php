@@ -28,10 +28,5 @@
 	    global $post;
 	    $post = get_post( $post_id );
 	} );	
-	function acme_login_redirect( $redirect_to, $request, $user  ) {
-	return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : get_permalink();
-	}
-	add_filter( 'login_redirect', 'acme_login_redirect', 10, 3 );
-
 ?>
 
