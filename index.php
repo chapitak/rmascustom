@@ -61,7 +61,6 @@
 			while ( have_posts() ) : the_post();
 			
 				get_template_part( 'content', get_post_type() );
-				echo "<a href="<?php the_permalink(); ?>">댓글</a>"
 												
 			endwhile;
 
