@@ -1,6 +1,6 @@
 <?php
 	function acme_login_redirect( $redirect_to, $request, $user  ) {
-		return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : previous_post_link();
+		return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : site_url();
 		}
 		add_filter( 'login_redirect', 'acme_login_redirect', 10, 3 );
   function theme_enqueue_styles() {
