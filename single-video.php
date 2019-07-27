@@ -54,26 +54,26 @@
 								<?php the_field('title'); ?><br>
 								
 								
-								<strong>연출: </strong>
+								<strong>연출 </strong>
 								<?php the_field('director'); ?><br>
 								
 								
-								<strong>개봉일: </strong>
+								<strong>개봉일 </strong>
 								<?php the_field('release_date'); ?><br>
 								
 								
-								<strong>관람일: </strong>
+								<strong>관람일 </strong>
 								<?php the_field('watch_date'); ?>쪽<br>
 								
 								
-								<strong>상영시간: </strong>
+								<strong>상영시간 </strong>
 								<?php the_field('running_time'); ?><br>
 								
 								
-								<strong>장르: </strong>
+								<strong>장르 </strong>
 								<?php the_field('genre'); ?><br>
 								
-								<strong>점수: </strong>
+								<strong>Rating </strong>
 								<?php the_field('rating'); ?><hr>
 								
 						<?php the_content(); ?>

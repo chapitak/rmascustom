@@ -43,30 +43,30 @@
 			<div class="post-content">
 			<img src = "<?php the_field('cover');?>"/><hr>
                                                         
-            <strong>제목: </strong>
+            <strong>제목 </strong>
             <?php the_field('title'); ?><br>
             
-            <strong>저자: </strong>
+            <strong>저자 </strong>
             <?php the_field('auther'); ?><br>
             
             
-            <strong>출판사: </strong>
+            <strong>출판사 </strong>
             <?php the_field('publisher'); ?><br>
             
             
-            <strong>분량: </strong>
+            <strong>분량 </strong>
             <?php the_field('pages'); ?>쪽<br>
             
             
-            <strong>출간일: </strong>
+            <strong>출간일 </strong>
             <?php the_field('publication_date'); ?><br>
             
             
-            <strong>독서기간: </strong>
+            <strong>독서기간 </strong>
             <?php the_field('start_date'); ?>~<?php the_field('end_date'); ?><br>
             
             
-            <strong>점수: </strong>
+            <strong>Rating </strong>
             <?php the_field('rating'); ?>
             <hr>
                                                         

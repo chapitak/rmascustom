@@ -51,23 +51,23 @@
 					<div class="post-content"><!--여기부터 이미지와 테이블까지. -->
 					<img src = "<?php the_field('cover');?>"/><br><hr>
 								
-								<strong>앨범명: </strong>
+								<strong>앨범명 </strong>
 								<?php the_field('title'); ?><br>
 								
 								
-								<strong>아티스트: </strong>
+								<strong>아티스트 </strong>
 								<?php the_field('artist'); ?><br>
 								
 								
-								<strong>발매일: </strong>
+								<strong>발매일 </strong>
 								<?php the_field('release_date'); ?><br>
 								
 								
-								<strong>장르: </strong>
+								<strong>장르 </strong>
 								<?php the_field('genre'); ?><br>
 								
 								
-								<strong>참고점수: </strong>
+								<strong>Rating </strong>
 								<?php the_field('rating'); ?><br>
 								<hr>
 								
