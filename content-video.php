@@ -41,34 +41,33 @@
 		<?php if ( get_the_content() ) : ?>
 		
 			<div class="post-content">
-			<img src = "<?php the_field('cover');?>"/><br><hr>
+			<img src = "<?php the_field('cover');?>"/><hr>
                                                         
-                                                        <strong>제목</strong>
-                                                        <?php the_field('title'); ?><br>
-                                                        
-                                                        
-                                                        <strong>연출</strong>
-                                                        <?php the_field('director'); ?><br>
-                                                        
-                                                        
-                                                        <strong>개봉일</strong>
-                                                        <?php the_field('release_date'); ?><br>
-                                                        
-                                                        
-                                                        <strong>관람일</strong>
-                                                        <?php the_field('watch_date'); ?><br>
-                                                        
-                                                        
-                                                        <strong>상영시간</strong>
-                                                        <?php the_field('running_time'); ?><br>
-                                                        
-                                                        
-                                                        <strong>장르</strong>
-                                                        <?php the_field('genre'); ?><br>
-                                                        
-                                                        
-                                                        <strong>참고점수</strong>
-                                                        <?php the_field('rating'); ?><br><hr>
+            <strong>제목</strong>
+            <?php the_field('title'); ?><br>
+            
+            
+            <strong>연출: </strong>
+            <?php the_field('director'); ?><br>
+            
+            
+            <strong>개봉일: </strong>
+            <?php the_field('release_date'); ?><br>
+            
+            
+            <strong>관람일: </strong>
+            <?php the_field('watch_date'); ?>쪽<br>
+            
+            
+            <strong>상영시간: </strong>
+            <?php the_field('running_time'); ?><br>
+            
+            
+            <strong>장르: </strong>
+            <?php the_field('genre'); ?><br>
+            
+            <strong>점수: </strong>
+            <?php the_field('rating'); ?><hr>
                                                         
 				<?php the_content(); ?>
 			
