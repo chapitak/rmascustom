@@ -11,6 +11,8 @@
 			?>
 			
 			<div id="post-<?php the_ID(); ?>" <?php post_class( 'single post' ); ?>>
+				<!--저자-->
+				<?php _e( 'Author', 'rams' ); ?></strong><?php the_author_posts_link(); ?>
 			
 				<?php 
 				
@@ -63,11 +65,11 @@
 								
 								
 								<strong>관람일 </strong>
-								<?php the_field('watch_date'); ?>쪽<br>
+								<?php the_field('watch_date'); ?><br>
 								
 								
 								<strong>상영시간 </strong>
-								<?php the_field('running_time'); ?><br>
+								<?php the_field('running_time'); ?>분<br>
 								
 								
 								<strong>장르 </strong>
