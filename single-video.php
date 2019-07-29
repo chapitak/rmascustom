@@ -49,9 +49,10 @@
 						<div style="float:right;">
 							<?php _e( 'Author', 'rams' ); ?></strong><?php the_author_posts_link(); ?> 
 							<?php if ( has_category() ) : ?>
-							
-								<p><strong><?php _e( 'Categories', 'rams' ); ?></strong><?php the_category( ', ' ); ?></p>
-							
+								<strong><?php _e( 'Categories', 'rams' ); ?></strong><?php the_category( ', ' ); ?>
+							<?php endif; ?>
+							<?php if (get_post_type() != null) : ?>
+								<strong></strong><?php get_post_type(); ?>
 							<?php endif; ?>
 						</div>
 					</div><!-- .post-header -->
