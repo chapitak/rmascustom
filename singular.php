@@ -45,10 +45,10 @@
 						<?php endif; ?>
 												
 						<?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
-						<div style="float:right;">
+						<div style="float:right;width:100%;">
 							<span style="float:right;"><?php _e( 'Author', 'rams' ); ?></strong><?php the_author_posts_link(); ?></span> <br>
 							<?php if ( has_category() ) : ?>
-								<span style="width:100%;float:right;"><strong></strong><?php the_category( ', ' ); ?></span>
+								<span style="float:right;"><strong></strong><?php the_category( ', ' ); ?></span>
 							<?php endif; ?>
 						</div>
 																
