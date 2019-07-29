@@ -80,6 +80,7 @@
 				<?php the_content(); ?>
 			
 			</div><!-- .post-content -->
+			<span style="float:right;">링크<?php if ($postType) { echo (esc_html($postType->labels->singular_name)); }?></span> 
 			
 		<?php endif; ?>
 	
