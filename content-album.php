@@ -73,7 +73,7 @@
                                                
 				<?php the_content(); ?>
 			
-			</div><!-- .post-content -->
+			</div><!-- .post-content --><br>
 			<span style="float:right;">
 			<a href="<?php the_permalink(); ?>/#respond"> <!-- The blog permalink with the anchor ID after -->
 				<!-- <i class="fa fa-comments-o"></i> Leave a Comment -->
