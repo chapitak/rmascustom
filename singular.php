@@ -50,7 +50,7 @@
 							<?php if ( has_category() ) : ?>
 								<strong></strong><?php the_category( ', ' ); ?>
 							<?php endif; ?>
-							<?php $postType = get_post_type_object(get_post_type());?>
+							<span style="float:right;"><?php $postType = get_post_type_object(get_post_type());?></span>
 							<span style="float:right;"><?php if ($postType) { echo (esc_html($postType->labels->singular_name)); }?></span> 
 						</div>
 																
