@@ -53,7 +53,7 @@
 							<?php endif; ?>
 							<?php $postType = get_post_type_object(get_post_type());?>
 							<?php if ($postType) : ?>
-								<span style="float:right"><?phpecho esc_html($postType->labels->singular_name);?></span>
+								<span style="float:right"><?php esc_html($postType->labels->singular_name);?></span>
 							<?php endif;?>
 						</div>
 					</div><!-- .post-header -->
