@@ -49,8 +49,15 @@
 			<div class="post-content">
 			
 				<?php the_content(); ?>
+				
 			
 			</div><!-- .post-content -->
+			<span style="float:right;">
+			<a href="<?php the_permalink(); ?>/#respond"> <!-- The blog permalink with the anchor ID after -->
+				<!-- <i class="fa fa-comments-o"></i> Leave a Comment -->
+			코멘트 남기기	
+			</a>
+			</span>
 			
 		<?php endif; ?>
 	
