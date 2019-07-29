@@ -80,8 +80,12 @@
 				<?php the_content(); ?>
 			
 			</div><!-- .post-content -->
-			<span style="float:right;">링크<?php if ($postType) { echo (esc_html($postType->labels->singular_name)); }?></span> 
-			
+			<span style="float:right;">
+			<a href="<?php the_permalink(); ?>/#respond"> <!-- The blog permalink with the anchor ID after -->
+				<!-- <i class="fa fa-comments-o"></i> Leave a Comment -->
+				댓글
+			</a>
+			</span>
 		<?php endif; ?>
 	
 	</div><!-- .post-inner -->
