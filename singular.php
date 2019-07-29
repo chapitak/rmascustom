@@ -46,7 +46,7 @@
 												
 						<?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
 						<div style="float:right;">
-							<span style="float:right;"><?php _e( 'Author', 'rams' ); ?></strong><?php the_author_posts_link(); ?> <br></span>
+							<span style="float:right;"><?php _e( 'Author', 'rams' ); ?></strong><?php the_author_posts_link(); ?></span> <br>
 							<?php if ( has_category() ) : ?>
 								<span style="float:right;"><strong></strong><?php the_category( ', ' ); ?></span>
 							<?php endif; ?>
