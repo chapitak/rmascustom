@@ -12,7 +12,6 @@
 			
 			<div id="post-<?php the_ID(); ?>" <?php post_class( 'single post' ); ?>>
 				<!--저자-->
-				<?php _e( 'Author', 'rams' ); ?></strong><?php the_author_posts_link(); ?>
 			
 				<?php 
 				
@@ -47,7 +46,14 @@
 						<?php endif; ?>
 												
 						<?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
-																
+						<div style="float:right;">
+							<?php _e( 'Author', 'rams' ); ?></strong><?php the_author_posts_link(); ?> 
+							<?php if ( has_category() ) : ?>
+							
+								<p><strong><?php _e( 'Categories', 'rams' ); ?></strong><?php the_category( ', ' ); ?></p>
+							
+							<?php endif; ?>
+						</div>
 					</div><!-- .post-header -->
 						
 					<div class="post-content"><!--여기부터 이미지와 테이블까지. -->
