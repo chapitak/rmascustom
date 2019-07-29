@@ -48,7 +48,7 @@
 						<div style="float:right;">
 							<span style="float:right;"><?php _e( 'Author', 'rams' ); ?></strong><?php the_author_posts_link(); ?> <br></span>
 							<?php if ( has_category() ) : ?>
-								<strong></strong><?php the_category( ', ' ); ?>
+								<span style="float:right;"><strong></strong><?php the_category( ', ' ); ?></span>
 							<?php endif; ?>
 						</div>
 																
