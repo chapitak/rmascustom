@@ -35,6 +35,13 @@
 			<?php endif; ?>
 			
 		    <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <div style="float:right;">
+                <?php _e( 'Author', 'rams' ); ?></strong><?php the_author_posts_link(); ?> 
+                <?php if ( has_category() ) : ?>
+                    <strong><?php _e( 'Categories', 'rams' ); ?></strong><?php the_category( ', ' ); ?>
+                <?php endif; ?>
+                    <strong><?php echo(get_post_type()); ?></strong>
+            </div>
 		    	    
 		</div><!-- .post-header -->
 
