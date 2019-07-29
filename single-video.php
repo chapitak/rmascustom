@@ -51,9 +51,10 @@
 							<?php if ( has_category() ) : ?>
 								<strong><?php _e( 'Categories', 'rams' ); ?></strong><?php the_category( ', ' ); ?>
 							<?php endif; ?>
-							<?php if (get_post_type() != null) : ?>
-								<strong></strong><?php get_post_type(); ?>
-							<?php endif; ?>
+							<?php echo(get_post_type()); ?>
+							<?php //if (get_post_type() != null) : ?>
+								<strong></strong><?php //get_post_type(); ?>
+							<?php //endif; ?>
 						</div>
 					</div><!-- .post-header -->
 						
