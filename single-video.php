@@ -51,7 +51,10 @@
 							<?php if ( has_category() ) : ?>
 								<strong><?php _e( 'Categories', 'rams' ); ?></strong><?php the_category( ', ' ); ?>
 							<?php endif; ?>
-								<strong><?php echo(get_post_type()); ?></strong>
+							<?php $postType = get_post_type_object(get_post_type());
+							if ($postType) {
+								echo esc_html($postType->labels->singular_name);
+							}?>
 						</div>
 					</div><!-- .post-header -->
 						
